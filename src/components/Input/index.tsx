@@ -24,7 +24,7 @@ export const Input:FC<InputFieldProps> = ({ type, placeholder, error, isValid, r
 
   return (
       <StyledTextField
-          type={type === InputType.PASSWORD && showPassword ? InputType.TEXT : type}
+          type={isPassword && showPassword ? InputType.TEXT : type}
           placeholder={placeholder}
           error={error}
           isValid={isValid}
